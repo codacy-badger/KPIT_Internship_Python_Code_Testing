@@ -2,7 +2,10 @@ language:	python
 python:
 - "3.6.2"
 # command to install dependencies
+install:
+- pip install codecov
 script:
 - python factorial.py
+- coverage run factorial.py
 after success:
 - codecov
