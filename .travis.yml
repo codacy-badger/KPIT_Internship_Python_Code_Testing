@@ -11,4 +11,4 @@ branches:
   only:
    - master
 after success:
-- codecov
+- bash < (curl -s https://codecov.io/bash)
