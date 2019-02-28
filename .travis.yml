@@ -8,4 +8,5 @@ script:
 - python factorial.py
 - coverage run factorial.py
 after success:
+- coveralls
 - codecov
