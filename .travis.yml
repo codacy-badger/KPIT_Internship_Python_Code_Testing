@@ -8,4 +8,4 @@ script:
 - python factorial.py
 - coverage run factorial.py
 after success:
-- bash <(curl -s https://codecov.io/bash)
+- codecov --token=98d33542-efb7-4048-885f-deeddf4cc42d
